@@ -1,0 +1,481 @@
+Starting `time_low_iteration_count` timing test.
+Small to large DataFrames, low iteration count. Do 5 iterations (1 iteration per seed in [1, 2, 3, 4, 5]) on DataFrame of sizes: [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768].
+
+'index_series_iterrows':
+size=2    :       664μs mean time over 5 seed iterations, mean time per row: 332μs, total time taken:       3,320μs.
+size=4    :     1,230μs mean time over 5 seed iterations, mean time per row: 307μs, total time taken:       6,151μs.
+size=8    :     2,121μs mean time over 5 seed iterations, mean time per row: 265μs, total time taken:      10,607μs.
+size=16   :     4,112μs mean time over 5 seed iterations, mean time per row: 257μs, total time taken:      20,563μs.
+size=32   :     7,880μs mean time over 5 seed iterations, mean time per row: 246μs, total time taken:      39,403μs.
+size=64   :    15,725μs mean time over 5 seed iterations, mean time per row: 245μs, total time taken:      78,628μs.
+size=128  :    30,721μs mean time over 5 seed iterations, mean time per row: 240μs, total time taken:     153,609μs.
+size=256  :    60,595μs mean time over 5 seed iterations, mean time per row: 236μs, total time taken:     302,978μs.
+size=512  :   120,606μs mean time over 5 seed iterations, mean time per row: 235μs, total time taken:     603,034μs.
+size=1024 :   241,952μs mean time over 5 seed iterations, mean time per row: 236μs, total time taken:   1,209,764μs.
+size=2048 :   488,616μs mean time over 5 seed iterations, mean time per row: 238μs, total time taken:   2,443,082μs.
+size=4096 :   988,177μs mean time over 5 seed iterations, mean time per row: 241μs, total time taken:   4,940,886μs.
+size=8192 : 1,964,450μs mean time over 5 seed iterations, mean time per row: 239μs, total time taken:   9,822,251μs.
+size=16384: 4,045,760μs mean time over 5 seed iterations, mean time per row: 246μs, total time taken:  20,228,802μs.
+size=32768: 7,954,321μs mean time over 5 seed iterations, mean time per row: 242μs, total time taken:  39,771,607μs.
+Total time taken for 'index_series_iterrows': 79,634,691μs.
+
+'index_series_iterrows_comprehension':
+size=2    :       816μs mean time over 5 seed iterations, mean time per row: 408μs, total time taken:       4,080μs.
+size=4    :     1,334μs mean time over 5 seed iterations, mean time per row: 333μs, total time taken:       6,673μs.
+size=8    :     2,379μs mean time over 5 seed iterations, mean time per row: 297μs, total time taken:      11,899μs.
+size=16   :     4,337μs mean time over 5 seed iterations, mean time per row: 271μs, total time taken:      21,687μs.
+size=32   :     9,079μs mean time over 5 seed iterations, mean time per row: 283μs, total time taken:      45,395μs.
+size=64   :    16,457μs mean time over 5 seed iterations, mean time per row: 257μs, total time taken:      82,288μs.
+size=128  :    31,667μs mean time over 5 seed iterations, mean time per row: 247μs, total time taken:     158,339μs.
+size=256  :    65,050μs mean time over 5 seed iterations, mean time per row: 254μs, total time taken:     325,254μs.
+size=512  :   136,750μs mean time over 5 seed iterations, mean time per row: 267μs, total time taken:     683,752μs.
+size=1024 :   251,265μs mean time over 5 seed iterations, mean time per row: 245μs, total time taken:   1,256,326μs.
+size=2048 :   498,169μs mean time over 5 seed iterations, mean time per row: 243μs, total time taken:   2,490,848μs.
+size=4096 :   978,433μs mean time over 5 seed iterations, mean time per row: 238μs, total time taken:   4,892,165μs.
+size=8192 : 2,071,758μs mean time over 5 seed iterations, mean time per row: 252μs, total time taken:  10,358,794μs.
+size=16384: 4,177,822μs mean time over 5 seed iterations, mean time per row: 254μs, total time taken:  20,889,113μs.
+size=32768: 8,283,756μs mean time over 5 seed iterations, mean time per row: 252μs, total time taken:  41,418,781μs.
+Total time taken for 'index_series_iterrows_comprehension': 82,645,403μs.
+
+'index_df_apply_kwargs':
+size=2    :     1,002μs mean time over 5 seed iterations, mean time per row: 501μs, total time taken:       5,010μs.
+size=4    :     1,399μs mean time over 5 seed iterations, mean time per row: 349μs, total time taken:       6,998μs.
+size=8    :     2,456μs mean time over 5 seed iterations, mean time per row: 307μs, total time taken:      12,282μs.
+size=16   :     4,264μs mean time over 5 seed iterations, mean time per row: 266μs, total time taken:      21,323μs.
+size=32   :     8,414μs mean time over 5 seed iterations, mean time per row: 262μs, total time taken:      42,074μs.
+size=64   :    16,019μs mean time over 5 seed iterations, mean time per row: 250μs, total time taken:      80,096μs.
+size=128  :    31,880μs mean time over 5 seed iterations, mean time per row: 249μs, total time taken:     159,404μs.
+size=256  :    62,627μs mean time over 5 seed iterations, mean time per row: 244μs, total time taken:     313,138μs.
+size=512  :   124,445μs mean time over 5 seed iterations, mean time per row: 243μs, total time taken:     622,226μs.
+size=1024 :   254,111μs mean time over 5 seed iterations, mean time per row: 248μs, total time taken:   1,270,556μs.
+size=2048 :   498,693μs mean time over 5 seed iterations, mean time per row: 243μs, total time taken:   2,493,469μs.
+size=4096 : 1,003,689μs mean time over 5 seed iterations, mean time per row: 245μs, total time taken:   5,018,445μs.
+size=8192 : 2,011,557μs mean time over 5 seed iterations, mean time per row: 245μs, total time taken:  10,057,788μs.
+size=16384: 4,025,761μs mean time over 5 seed iterations, mean time per row: 245μs, total time taken:  20,128,808μs.
+size=32768: 8,013,726μs mean time over 5 seed iterations, mean time per row: 244μs, total time taken:  40,068,630μs.
+Total time taken for 'index_df_apply_kwargs': 80,300,255μs.
+
+'index_df_apply':
+size=2    :       961μs mean time over 5 seed iterations, mean time per row: 480μs, total time taken:       4,808μs.
+size=4    :     1,348μs mean time over 5 seed iterations, mean time per row: 337μs, total time taken:       6,744μs.
+size=8    :     2,257μs mean time over 5 seed iterations, mean time per row: 282μs, total time taken:      11,286μs.
+size=16   :     3,830μs mean time over 5 seed iterations, mean time per row: 239μs, total time taken:      19,151μs.
+size=32   :     7,871μs mean time over 5 seed iterations, mean time per row: 245μs, total time taken:      39,359μs.
+size=64   :    16,428μs mean time over 5 seed iterations, mean time per row: 256μs, total time taken:      82,144μs.
+size=128  :    29,838μs mean time over 5 seed iterations, mean time per row: 233μs, total time taken:     149,192μs.
+size=256  :    55,613μs mean time over 5 seed iterations, mean time per row: 217μs, total time taken:     278,065μs.
+size=512  :   110,442μs mean time over 5 seed iterations, mean time per row: 215μs, total time taken:     552,214μs.
+size=1024 :   224,805μs mean time over 5 seed iterations, mean time per row: 219μs, total time taken:   1,124,027μs.
+size=2048 :   446,251μs mean time over 5 seed iterations, mean time per row: 217μs, total time taken:   2,231,256μs.
+size=4096 :   890,313μs mean time over 5 seed iterations, mean time per row: 217μs, total time taken:   4,451,566μs.
+size=8192 : 1,809,105μs mean time over 5 seed iterations, mean time per row: 220μs, total time taken:   9,045,526μs.
+size=16384: 3,655,806μs mean time over 5 seed iterations, mean time per row: 223μs, total time taken:  18,279,030μs.
+size=32768: 7,297,341μs mean time over 5 seed iterations, mean time per row: 222μs, total time taken:  36,486,709μs.
+Total time taken for 'index_df_apply': 72,761,083μs.
+
+'index_series_iterrows_comprehension_ignored_args':
+size=2    :       294μs mean time over 5 seed iterations, mean time per row: 147μs, total time taken:       1,474μs.
+size=4    :       282μs mean time over 5 seed iterations, mean time per row:  70μs, total time taken:       1,411μs.
+size=8    :       462μs mean time over 5 seed iterations, mean time per row:  57μs, total time taken:       2,312μs.
+size=16   :       802μs mean time over 5 seed iterations, mean time per row:  50μs, total time taken:       4,010μs.
+size=32   :     1,542μs mean time over 5 seed iterations, mean time per row:  48μs, total time taken:       7,712μs.
+size=64   :     2,946μs mean time over 5 seed iterations, mean time per row:  46μs, total time taken:      14,733μs.
+size=128  :     5,866μs mean time over 5 seed iterations, mean time per row:  45μs, total time taken:      29,330μs.
+size=256  :    11,585μs mean time over 5 seed iterations, mean time per row:  45μs, total time taken:      57,926μs.
+size=512  :    22,776μs mean time over 5 seed iterations, mean time per row:  44μs, total time taken:     113,884μs.
+size=1024 :    46,072μs mean time over 5 seed iterations, mean time per row:  44μs, total time taken:     230,362μs.
+size=2048 :    90,447μs mean time over 5 seed iterations, mean time per row:  44μs, total time taken:     452,239μs.
+size=4096 :   181,855μs mean time over 5 seed iterations, mean time per row:  44μs, total time taken:     909,279μs.
+size=8192 :   364,240μs mean time over 5 seed iterations, mean time per row:  44μs, total time taken:   1,821,200μs.
+size=16384:   726,846μs mean time over 5 seed iterations, mean time per row:  44μs, total time taken:   3,634,233μs.
+size=32768: 1,459,256μs mean time over 5 seed iterations, mean time per row:  44μs, total time taken:   7,296,284μs.
+Total time taken for 'index_series_iterrows_comprehension_ignored_args': 14,576,395μs.
+
+'index_dict_iterrows':
+size=2    :       247μs mean time over 5 seed iterations, mean time per row: 123μs, total time taken:       1,236μs.
+size=4    :       246μs mean time over 5 seed iterations, mean time per row:  61μs, total time taken:       1,232μs.
+size=8    :       470μs mean time over 5 seed iterations, mean time per row:  58μs, total time taken:       2,351μs.
+size=16   :       677μs mean time over 5 seed iterations, mean time per row:  42μs, total time taken:       3,386μs.
+size=32   :     1,289μs mean time over 5 seed iterations, mean time per row:  40μs, total time taken:       6,445μs.
+size=64   :     2,436μs mean time over 5 seed iterations, mean time per row:  38μs, total time taken:      12,182μs.
+size=128  :     5,012μs mean time over 5 seed iterations, mean time per row:  39μs, total time taken:      25,060μs.
+size=256  :    10,004μs mean time over 5 seed iterations, mean time per row:  39μs, total time taken:      50,020μs.
+size=512  :    18,994μs mean time over 5 seed iterations, mean time per row:  37μs, total time taken:      94,970μs.
+size=1024 :    38,519μs mean time over 5 seed iterations, mean time per row:  37μs, total time taken:     192,595μs.
+size=2048 :    76,900μs mean time over 5 seed iterations, mean time per row:  37μs, total time taken:     384,502μs.
+size=4096 :   154,551μs mean time over 5 seed iterations, mean time per row:  37μs, total time taken:     772,758μs.
+size=8192 :   306,829μs mean time over 5 seed iterations, mean time per row:  37μs, total time taken:   1,534,149μs.
+size=16384:   617,500μs mean time over 5 seed iterations, mean time per row:  37μs, total time taken:   3,087,504μs.
+size=32768: 1,234,208μs mean time over 5 seed iterations, mean time per row:  37μs, total time taken:   6,171,044μs.
+Total time taken for 'index_dict_iterrows': 12,339,443μs.
+
+'index_dict_iterrows_comprehension':
+size=2    :       222μs mean time over 5 seed iterations, mean time per row: 111μs, total time taken:       1,113μs.
+size=4    :       248μs mean time over 5 seed iterations, mean time per row:  62μs, total time taken:       1,241μs.
+size=8    :       429μs mean time over 5 seed iterations, mean time per row:  53μs, total time taken:       2,148μs.
+size=16   :       692μs mean time over 5 seed iterations, mean time per row:  43μs, total time taken:       3,460μs.
+size=32   :     1,218μs mean time over 5 seed iterations, mean time per row:  38μs, total time taken:       6,093μs.
+size=64   :     2,487μs mean time over 5 seed iterations, mean time per row:  38μs, total time taken:      12,439μs.
+size=128  :     4,863μs mean time over 5 seed iterations, mean time per row:  37μs, total time taken:      24,316μs.
+size=256  :     9,780μs mean time over 5 seed iterations, mean time per row:  38μs, total time taken:      48,900μs.
+size=512  :    19,195μs mean time over 5 seed iterations, mean time per row:  37μs, total time taken:      95,975μs.
+size=1024 :    38,657μs mean time over 5 seed iterations, mean time per row:  37μs, total time taken:     193,288μs.
+size=2048 :    76,507μs mean time over 5 seed iterations, mean time per row:  37μs, total time taken:     382,537μs.
+size=4096 :   153,752μs mean time over 5 seed iterations, mean time per row:  37μs, total time taken:     768,762μs.
+size=8192 :   305,141μs mean time over 5 seed iterations, mean time per row:  37μs, total time taken:   1,525,706μs.
+size=16384:   616,964μs mean time over 5 seed iterations, mean time per row:  37μs, total time taken:   3,084,824μs.
+size=32768: 1,246,608μs mean time over 5 seed iterations, mean time per row:  38μs, total time taken:   6,233,041μs.
+Total time taken for 'index_dict_iterrows_comprehension': 12,383,851μs.
+
+'index_dict_iterrows_comprehension_ignored_args':
+size=2    :       194μs mean time over 5 seed iterations, mean time per row:  97μs, total time taken:         971μs.
+size=4    :       235μs mean time over 5 seed iterations, mean time per row:  58μs, total time taken:       1,179μs.
+size=8    :       395μs mean time over 5 seed iterations, mean time per row:  49μs, total time taken:       1,975μs.
+size=16   :       622μs mean time over 5 seed iterations, mean time per row:  38μs, total time taken:       3,112μs.
+size=32   :     1,180μs mean time over 5 seed iterations, mean time per row:  36μs, total time taken:       5,901μs.
+size=64   :     2,453μs mean time over 5 seed iterations, mean time per row:  38μs, total time taken:      12,266μs.
+size=128  :     4,929μs mean time over 5 seed iterations, mean time per row:  38μs, total time taken:      24,646μs.
+size=256  :     9,449μs mean time over 5 seed iterations, mean time per row:  36μs, total time taken:      47,247μs.
+size=512  :    18,794μs mean time over 5 seed iterations, mean time per row:  36μs, total time taken:      93,971μs.
+size=1024 :    37,383μs mean time over 5 seed iterations, mean time per row:  36μs, total time taken:     186,915μs.
+size=2048 :    75,574μs mean time over 5 seed iterations, mean time per row:  36μs, total time taken:     377,870μs.
+size=4096 :   150,085μs mean time over 5 seed iterations, mean time per row:  36μs, total time taken:     750,427μs.
+size=8192 :   301,338μs mean time over 5 seed iterations, mean time per row:  36μs, total time taken:   1,506,692μs.
+size=16384:   607,937μs mean time over 5 seed iterations, mean time per row:  37μs, total time taken:   3,039,689μs.
+size=32768: 1,191,263μs mean time over 5 seed iterations, mean time per row:  36μs, total time taken:   5,956,315μs.
+Total time taken for 'index_dict_iterrows_comprehension_ignored_args': 12,009,183μs.
+
+'index_df_apply_kwargs_ignored_args':
+size=2    :       441μs mean time over 5 seed iterations, mean time per row: 220μs, total time taken:       2,208μs.
+size=4    :       382μs mean time over 5 seed iterations, mean time per row:  95μs, total time taken:       1,914μs.
+size=8    :       474μs mean time over 5 seed iterations, mean time per row:  59μs, total time taken:       2,370μs.
+size=16   :       563μs mean time over 5 seed iterations, mean time per row:  35μs, total time taken:       2,816μs.
+size=32   :       781μs mean time over 5 seed iterations, mean time per row:  24μs, total time taken:       3,907μs.
+size=64   :     1,401μs mean time over 5 seed iterations, mean time per row:  21μs, total time taken:       7,009μs.
+size=128  :     2,643μs mean time over 5 seed iterations, mean time per row:  20μs, total time taken:      13,215μs.
+size=256  :     4,873μs mean time over 5 seed iterations, mean time per row:  19μs, total time taken:      24,369μs.
+size=512  :     8,996μs mean time over 5 seed iterations, mean time per row:  17μs, total time taken:      44,982μs.
+size=1024 :    18,076μs mean time over 5 seed iterations, mean time per row:  17μs, total time taken:      90,383μs.
+size=2048 :    35,493μs mean time over 5 seed iterations, mean time per row:  17μs, total time taken:     177,467μs.
+size=4096 :    70,978μs mean time over 5 seed iterations, mean time per row:  17μs, total time taken:     354,894μs.
+size=8192 :   140,677μs mean time over 5 seed iterations, mean time per row:  17μs, total time taken:     703,389μs.
+size=16384:   280,682μs mean time over 5 seed iterations, mean time per row:  17μs, total time taken:   1,403,414μs.
+size=32768:   560,150μs mean time over 5 seed iterations, mean time per row:  17μs, total time taken:   2,800,754μs.
+Total time taken for 'index_df_apply_kwargs_ignored_args': 5,633,098μs.
+
+'to_records':
+size=2    :       396μs mean time over 5 seed iterations, mean time per row: 198μs, total time taken:       1,982μs.
+size=4    :       355μs mean time over 5 seed iterations, mean time per row:  88μs, total time taken:       1,775μs.
+size=8    :       400μs mean time over 5 seed iterations, mean time per row:  50μs, total time taken:       2,004μs.
+size=16   :       527μs mean time over 5 seed iterations, mean time per row:  32μs, total time taken:       2,639μs.
+size=32   :       676μs mean time over 5 seed iterations, mean time per row:  21μs, total time taken:       3,381μs.
+size=64   :       968μs mean time over 5 seed iterations, mean time per row:  15μs, total time taken:       4,842μs.
+size=128  :     1,681μs mean time over 5 seed iterations, mean time per row:  13μs, total time taken:       8,409μs.
+size=256  :     2,940μs mean time over 5 seed iterations, mean time per row:  11μs, total time taken:      14,703μs.
+size=512  :     5,576μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:      27,882μs.
+size=1024 :    10,920μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:      54,602μs.
+size=2048 :    21,558μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:     107,793μs.
+size=4096 :    42,378μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:     211,893μs.
+size=8192 :    83,319μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:     416,595μs.
+size=16384:   168,523μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:     842,619μs.
+size=32768:   337,008μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:   1,685,044μs.
+Total time taken for 'to_records': 3,386,170μs.
+
+'index_dict_apply':
+size=2    :       389μs mean time over 5 seed iterations, mean time per row: 194μs, total time taken:       1,948μs.
+size=4    :       326μs mean time over 5 seed iterations, mean time per row:  81μs, total time taken:       1,630μs.
+size=8    :       368μs mean time over 5 seed iterations, mean time per row:  46μs, total time taken:       1,844μs.
+size=16   :       453μs mean time over 5 seed iterations, mean time per row:  28μs, total time taken:       2,269μs.
+size=32   :       532μs mean time over 5 seed iterations, mean time per row:  16μs, total time taken:       2,660μs.
+size=64   :       913μs mean time over 5 seed iterations, mean time per row:  14μs, total time taken:       4,568μs.
+size=128  :     1,600μs mean time over 5 seed iterations, mean time per row:  12μs, total time taken:       8,003μs.
+size=256  :     2,985μs mean time over 5 seed iterations, mean time per row:  11μs, total time taken:      14,926μs.
+size=512  :     5,562μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:      27,812μs.
+size=1024 :    10,618μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:      53,090μs.
+size=2048 :    20,940μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:     104,701μs.
+size=4096 :    42,032μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:     210,161μs.
+size=8192 :    83,656μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:     418,280μs.
+size=16384:   163,850μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:     819,250μs.
+size=32768:   327,958μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:   1,639,794μs.
+Total time taken for 'index_dict_apply': 3,310,942μs.
+
+'index_dict_apply_ignored_args':
+size=2    :       368μs mean time over 5 seed iterations, mean time per row: 184μs, total time taken:       1,842μs.
+size=4    :       407μs mean time over 5 seed iterations, mean time per row: 101μs, total time taken:       2,035μs.
+size=8    :       500μs mean time over 5 seed iterations, mean time per row:  62μs, total time taken:       2,500μs.
+size=16   :       456μs mean time over 5 seed iterations, mean time per row:  28μs, total time taken:       2,280μs.
+size=32   :       627μs mean time over 5 seed iterations, mean time per row:  19μs, total time taken:       3,138μs.
+size=64   :       874μs mean time over 5 seed iterations, mean time per row:  13μs, total time taken:       4,374μs.
+size=128  :     1,494μs mean time over 5 seed iterations, mean time per row:  11μs, total time taken:       7,473μs.
+size=256  :     2,743μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:      13,719μs.
+size=512  :     5,475μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:      27,378μs.
+size=1024 :    10,081μs mean time over 5 seed iterations, mean time per row:   9μs, total time taken:      50,406μs.
+size=2048 :    19,789μs mean time over 5 seed iterations, mean time per row:   9μs, total time taken:      98,949μs.
+size=4096 :    40,410μs mean time over 5 seed iterations, mean time per row:   9μs, total time taken:     202,053μs.
+size=8192 :    79,767μs mean time over 5 seed iterations, mean time per row:   9μs, total time taken:     398,837μs.
+size=16384:   157,674μs mean time over 5 seed iterations, mean time per row:   9μs, total time taken:     788,371μs.
+size=32768:   311,290μs mean time over 5 seed iterations, mean time per row:   9μs, total time taken:   1,556,451μs.
+Total time taken for 'index_dict_apply_ignored_args': 3,159,812μs.
+
+'index_dict_comprehension':
+size=2    :       288μs mean time over 5 seed iterations, mean time per row: 144μs, total time taken:       1,444μs.
+size=4    :       275μs mean time over 5 seed iterations, mean time per row:  68μs, total time taken:       1,379μs.
+size=8    :       303μs mean time over 5 seed iterations, mean time per row:  37μs, total time taken:       1,517μs.
+size=16   :       381μs mean time over 5 seed iterations, mean time per row:  23μs, total time taken:       1,909μs.
+size=32   :       410μs mean time over 5 seed iterations, mean time per row:  12μs, total time taken:       2,054μs.
+size=64   :       612μs mean time over 5 seed iterations, mean time per row:   9μs, total time taken:       3,062μs.
+size=128  :       936μs mean time over 5 seed iterations, mean time per row:   7μs, total time taken:       4,680μs.
+size=256  :     1,603μs mean time over 5 seed iterations, mean time per row:   6μs, total time taken:       8,015μs.
+size=512  :     2,968μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:      14,844μs.
+size=1024 :     5,824μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:      29,120μs.
+size=2048 :    10,943μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:      54,717μs.
+size=4096 :    22,235μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:     111,176μs.
+size=8192 :    44,815μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:     224,075μs.
+size=16384:    89,253μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:     446,268μs.
+size=32768:   178,706μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:     893,531μs.
+Total time taken for 'index_dict_comprehension': 1,797,796μs.
+
+'index_dict_comprehension_ignored_args':
+size=2    :       261μs mean time over 5 seed iterations, mean time per row: 130μs, total time taken:       1,309μs.
+size=4    :       266μs mean time over 5 seed iterations, mean time per row:  66μs, total time taken:       1,333μs.
+size=8    :       268μs mean time over 5 seed iterations, mean time per row:  33μs, total time taken:       1,342μs.
+size=16   :       383μs mean time over 5 seed iterations, mean time per row:  23μs, total time taken:       1,915μs.
+size=32   :       418μs mean time over 5 seed iterations, mean time per row:  13μs, total time taken:       2,090μs.
+size=64   :       557μs mean time over 5 seed iterations, mean time per row:   8μs, total time taken:       2,787μs.
+size=128  :       890μs mean time over 5 seed iterations, mean time per row:   6μs, total time taken:       4,454μs.
+size=256  :     1,545μs mean time over 5 seed iterations, mean time per row:   6μs, total time taken:       7,729μs.
+size=512  :     2,790μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:      13,954μs.
+size=1024 :     5,291μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:      26,455μs.
+size=2048 :    10,560μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:      52,800μs.
+size=4096 :    20,873μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:     104,369μs.
+size=8192 :    41,794μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:     208,971μs.
+size=16384:    83,962μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:     419,812μs.
+size=32768:   168,237μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:     841,185μs.
+Total time taken for 'index_dict_comprehension_ignored_args': 1,690,511μs.
+
+'to_numpy_take':
+size=2    :       139μs mean time over 5 seed iterations, mean time per row:  69μs, total time taken:         696μs.
+size=4    :       117μs mean time over 5 seed iterations, mean time per row:  29μs, total time taken:         585μs.
+size=8    :       124μs mean time over 5 seed iterations, mean time per row:  15μs, total time taken:         623μs.
+size=16   :       125μs mean time over 5 seed iterations, mean time per row:   7μs, total time taken:         625μs.
+size=32   :       180μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:         900μs.
+size=64   :       430μs mean time over 5 seed iterations, mean time per row:   6μs, total time taken:       2,154μs.
+size=128  :       843μs mean time over 5 seed iterations, mean time per row:   6μs, total time taken:       4,219μs.
+size=256  :     1,660μs mean time over 5 seed iterations, mean time per row:   6μs, total time taken:       8,302μs.
+size=512  :     2,815μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:      14,078μs.
+size=1024 :     5,064μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:      25,320μs.
+size=2048 :    10,864μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:      54,322μs.
+size=4096 :    21,507μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:     107,538μs.
+size=8192 :    41,623μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:     208,119μs.
+size=16384:    82,845μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:     414,229μs.
+size=32768:   165,787μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:     828,938μs.
+Total time taken for 'to_numpy_take': 1,670,655μs.
+
+'itertuples':
+size=2    :       373μs mean time over 5 seed iterations, mean time per row: 186μs, total time taken:       1,865μs.
+size=4    :       329μs mean time over 5 seed iterations, mean time per row:  82μs, total time taken:       1,647μs.
+size=8    :       349μs mean time over 5 seed iterations, mean time per row:  43μs, total time taken:       1,749μs.
+size=16   :       375μs mean time over 5 seed iterations, mean time per row:  23μs, total time taken:       1,875μs.
+size=32   :       445μs mean time over 5 seed iterations, mean time per row:  13μs, total time taken:       2,228μs.
+size=64   :       584μs mean time over 5 seed iterations, mean time per row:   9μs, total time taken:       2,921μs.
+size=128  :       852μs mean time over 5 seed iterations, mean time per row:   6μs, total time taken:       4,263μs.
+size=256  :     1,360μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:       6,800μs.
+size=512  :     2,474μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:      12,372μs.
+size=1024 :     4,653μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:      23,268μs.
+size=2048 :     8,731μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:      43,657μs.
+size=4096 :    17,124μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:      85,624μs.
+size=8192 :    34,255μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:     171,278μs.
+size=16384:    67,932μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:     339,660μs.
+size=32768:   134,577μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:     672,885μs.
+Total time taken for 'itertuples': 1,372,099μs.
+
+'itertuples_comprehension':
+size=2    :       327μs mean time over 5 seed iterations, mean time per row: 163μs, total time taken:       1,638μs.
+size=4    :       304μs mean time over 5 seed iterations, mean time per row:  76μs, total time taken:       1,522μs.
+size=8    :       334μs mean time over 5 seed iterations, mean time per row:  41μs, total time taken:       1,674μs.
+size=16   :       373μs mean time over 5 seed iterations, mean time per row:  23μs, total time taken:       1,868μs.
+size=32   :       440μs mean time over 5 seed iterations, mean time per row:  13μs, total time taken:       2,203μs.
+size=64   :       599μs mean time over 5 seed iterations, mean time per row:   9μs, total time taken:       2,997μs.
+size=128  :       854μs mean time over 5 seed iterations, mean time per row:   6μs, total time taken:       4,272μs.
+size=256  :     1,348μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:       6,743μs.
+size=512  :     2,410μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:      12,054μs.
+size=1024 :     4,381μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:      21,905μs.
+size=2048 :     8,608μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:      43,042μs.
+size=4096 :    17,237μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:      86,187μs.
+size=8192 :    34,537μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:     172,689μs.
+size=16384:    67,417μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:     337,086μs.
+size=32768:   134,478μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:     672,391μs.
+Total time taken for 'itertuples_comprehension': 1,368,279μs.
+
+'itertuples2':
+size=2    :       312μs mean time over 5 seed iterations, mean time per row: 156μs, total time taken:       1,563μs.
+size=4    :       320μs mean time over 5 seed iterations, mean time per row:  80μs, total time taken:       1,604μs.
+size=8    :       327μs mean time over 5 seed iterations, mean time per row:  40μs, total time taken:       1,635μs.
+size=16   :       354μs mean time over 5 seed iterations, mean time per row:  22μs, total time taken:       1,772μs.
+size=32   :       438μs mean time over 5 seed iterations, mean time per row:  13μs, total time taken:       2,190μs.
+size=64   :       555μs mean time over 5 seed iterations, mean time per row:   8μs, total time taken:       2,777μs.
+size=128  :       917μs mean time over 5 seed iterations, mean time per row:   7μs, total time taken:       4,586μs.
+size=256  :     1,356μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:       6,781μs.
+size=512  :     2,349μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:      11,749μs.
+size=1024 :     4,431μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:      22,157μs.
+size=2048 :     8,474μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:      42,371μs.
+size=4096 :    16,674μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:      83,374μs.
+size=8192 :    33,376μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:     166,883μs.
+size=16384:    65,564μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:     327,824μs.
+size=32768:   131,766μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:     658,834μs.
+Total time taken for 'itertuples2': 1,336,107μs.
+
+'itertuples_ignored_args':
+size=2    :       327μs mean time over 5 seed iterations, mean time per row: 163μs, total time taken:       1,636μs.
+size=4    :       295μs mean time over 5 seed iterations, mean time per row:  73μs, total time taken:       1,476μs.
+size=8    :       336μs mean time over 5 seed iterations, mean time per row:  42μs, total time taken:       1,682μs.
+size=16   :       370μs mean time over 5 seed iterations, mean time per row:  23μs, total time taken:       1,850μs.
+size=32   :       402μs mean time over 5 seed iterations, mean time per row:  12μs, total time taken:       2,013μs.
+size=64   :       597μs mean time over 5 seed iterations, mean time per row:   9μs, total time taken:       2,989μs.
+size=128  :       741μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:       3,707μs.
+size=256  :     1,271μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:       6,355μs.
+size=512  :     2,146μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:      10,731μs.
+size=1024 :     4,071μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:      20,358μs.
+size=2048 :     7,748μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:      38,741μs.
+size=4096 :    15,276μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:      76,381μs.
+size=8192 :    30,281μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:     151,405μs.
+size=16384:    61,125μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:     305,626μs.
+size=32768:   120,829μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:     604,148μs.
+Total time taken for 'itertuples_ignored_args': 1,229,105μs.
+
+'itertuples_direct_access':
+size=2    :       357μs mean time over 5 seed iterations, mean time per row: 178μs, total time taken:       1,789μs.
+size=4    :       335μs mean time over 5 seed iterations, mean time per row:  83μs, total time taken:       1,675μs.
+size=8    :       305μs mean time over 5 seed iterations, mean time per row:  38μs, total time taken:       1,528μs.
+size=16   :       364μs mean time over 5 seed iterations, mean time per row:  22μs, total time taken:       1,820μs.
+size=32   :       432μs mean time over 5 seed iterations, mean time per row:  13μs, total time taken:       2,164μs.
+size=64   :       484μs mean time over 5 seed iterations, mean time per row:   7μs, total time taken:       2,422μs.
+size=128  :       691μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:       3,458μs.
+size=256  :     1,035μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:       5,177μs.
+size=512  :     1,800μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:       9,000μs.
+size=1024 :     3,377μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:      16,885μs.
+size=2048 :     6,280μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:      31,400μs.
+size=4096 :    12,368μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:      61,843μs.
+size=8192 :    24,856μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:     124,284μs.
+size=16384:    48,951μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:     244,757μs.
+size=32768:    97,167μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:     485,837μs.
+Total time taken for 'itertuples_direct_access': 994,046μs.
+
+'itertuples_direct_access_comprehension':
+size=2    :       309μs mean time over 5 seed iterations, mean time per row: 154μs, total time taken:       1,546μs.
+size=4    :       304μs mean time over 5 seed iterations, mean time per row:  76μs, total time taken:       1,520μs.
+size=8    :       306μs mean time over 5 seed iterations, mean time per row:  38μs, total time taken:       1,531μs.
+size=16   :       343μs mean time over 5 seed iterations, mean time per row:  21μs, total time taken:       1,715μs.
+size=32   :       383μs mean time over 5 seed iterations, mean time per row:  11μs, total time taken:       1,919μs.
+size=64   :       484μs mean time over 5 seed iterations, mean time per row:   7μs, total time taken:       2,424μs.
+size=128  :       687μs mean time over 5 seed iterations, mean time per row:   5μs, total time taken:       3,439μs.
+size=256  :     1,034μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:       5,174μs.
+size=512  :     1,797μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:       8,989μs.
+size=1024 :     3,270μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:      16,351μs.
+size=2048 :     6,144μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:      30,724μs.
+size=4096 :    12,269μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:      61,348μs.
+size=8192 :    24,412μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:     122,064μs.
+size=16384:    48,485μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:     242,427μs.
+size=32768:    96,858μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:     484,290μs.
+Total time taken for 'itertuples_direct_access_comprehension': 985,468μs.
+
+'to_numpy_direct_access':
+size=2    :       102μs mean time over 5 seed iterations, mean time per row:  51μs, total time taken:         514μs.
+size=4    :        79μs mean time over 5 seed iterations, mean time per row:  19μs, total time taken:         397μs.
+size=8    :        86μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:         434μs.
+size=16   :        78μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:         391μs.
+size=32   :       110μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:         550μs.
+size=64   :       203μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:       1,017μs.
+size=128  :       401μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:       2,005μs.
+size=256  :       720μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:       3,601μs.
+size=512  :     1,390μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:       6,954μs.
+size=1024 :     2,830μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:      14,151μs.
+size=2048 :     5,509μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:      27,547μs.
+size=4096 :    11,329μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:      56,645μs.
+size=8192 :    22,390μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:     111,953μs.
+size=16384:    45,310μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:     226,553μs.
+size=32768:    91,476μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:     457,384μs.
+Total time taken for 'to_numpy_direct_access': 910,103μs.
+
+'zip_comprehension_direct_access':
+size=2    :       127μs mean time over 5 seed iterations, mean time per row:  63μs, total time taken:         637μs.
+size=4    :       145μs mean time over 5 seed iterations, mean time per row:  36μs, total time taken:         726μs.
+size=8    :       149μs mean time over 5 seed iterations, mean time per row:  18μs, total time taken:         748μs.
+size=16   :       152μs mean time over 5 seed iterations, mean time per row:   9μs, total time taken:         763μs.
+size=32   :       201μs mean time over 5 seed iterations, mean time per row:   6μs, total time taken:       1,005μs.
+size=64   :       284μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:       1,422μs.
+size=128  :       455μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:       2,277μs.
+size=256  :       800μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:       4,003μs.
+size=512  :     1,401μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:       7,007μs.
+size=1024 :     2,750μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:      13,751μs.
+size=2048 :     5,379μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:      26,895μs.
+size=4096 :    11,244μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:      56,220μs.
+size=8192 :    22,932μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:     114,662μs.
+size=16384:    44,014μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:     220,074μs.
+size=32768:    87,253μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:     436,265μs.
+Total time taken for 'zip_comprehension_direct_access': 886,462μs.
+
+'zip_comprehension_lookup':
+size=2    :       163μs mean time over 5 seed iterations, mean time per row:  81μs, total time taken:         815μs.
+size=4    :       133μs mean time over 5 seed iterations, mean time per row:  33μs, total time taken:         669μs.
+size=8    :       166μs mean time over 5 seed iterations, mean time per row:  20μs, total time taken:         831μs.
+size=16   :       161μs mean time over 5 seed iterations, mean time per row:  10μs, total time taken:         805μs.
+size=32   :       197μs mean time over 5 seed iterations, mean time per row:   6μs, total time taken:         986μs.
+size=64   :       307μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:       1,538μs.
+size=128  :       505μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:       2,527μs.
+size=256  :     1,101μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:       5,508μs.
+size=512  :     1,422μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:       7,111μs.
+size=1024 :     3,070μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:      15,350μs.
+size=2048 :     5,771μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:      28,856μs.
+size=4096 :    10,999μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:      54,999μs.
+size=8192 :    22,305μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:     111,529μs.
+size=16384:    46,517μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:     232,587μs.
+size=32768:    87,779μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:     438,895μs.
+Total time taken for 'zip_comprehension_lookup': 903,013μs.
+
+'zip_comprehension_np_values_lookup':
+size=2    :       148μs mean time over 5 seed iterations, mean time per row:  74μs, total time taken:         742μs.
+size=4    :       138μs mean time over 5 seed iterations, mean time per row:  34μs, total time taken:         691μs.
+size=8    :       135μs mean time over 5 seed iterations, mean time per row:  16μs, total time taken:         677μs.
+size=16   :       179μs mean time over 5 seed iterations, mean time per row:  11μs, total time taken:         899μs.
+size=32   :       198μs mean time over 5 seed iterations, mean time per row:   6μs, total time taken:         992μs.
+size=64   :       285μs mean time over 5 seed iterations, mean time per row:   4μs, total time taken:       1,429μs.
+size=128  :       435μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:       2,179μs.
+size=256  :       771μs mean time over 5 seed iterations, mean time per row:   3μs, total time taken:       3,858μs.
+size=512  :     1,322μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:       6,613μs.
+size=1024 :     2,516μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:      12,580μs.
+size=2048 :     5,197μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:      25,986μs.
+size=4096 :    10,157μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:      50,785μs.
+size=8192 :    19,885μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:      99,426μs.
+size=16384:    39,647μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:     198,236μs.
+size=32768:    79,362μs mean time over 5 seed iterations, mean time per row:   2μs, total time taken:     396,813μs.
+Total time taken for 'zip_comprehension_np_values_lookup': 801,915μs.
+
+Overall timing report:
+index_series_iterrows_comprehension             : median=65,050μs	mean=1,101,938μs	max=8,283,756μs	min=  816μs	total= 82,645,403μs.
+index_df_apply_kwargs                           : median=62,627μs	mean=1,070,670μs	max=8,013,726μs	min=1,002μs	total= 80,300,255μs.
+index_series_iterrows                           : median=60,595μs	mean=1,061,795μs	max=7,954,321μs	min=  664μs	total= 79,634,691μs.
+index_df_apply                                  : median=55,613μs	mean=  970,147μs	max=7,297,341μs	min=  961μs	total= 72,761,083μs.
+index_series_iterrows_comprehension_ignored_args: median=11,585μs	mean=  194,351μs	max=1,459,256μs	min=  282μs	total= 14,576,395μs.
+index_dict_iterrows_comprehension               : median= 9,780μs	mean=  165,118μs	max=1,246,608μs	min=  222μs	total= 12,383,851μs.
+index_dict_iterrows                             : median=10,004μs	mean=  164,525μs	max=1,234,208μs	min=  246μs	total= 12,339,443μs.
+index_dict_iterrows_comprehension_ignored_args  : median= 9,449μs	mean=  160,122μs	max=1,191,263μs	min=  194μs	total= 12,009,183μs.
+index_df_apply_kwargs_ignored_args              : median= 4,873μs	mean=   75,107μs	max=  560,150μs	min=  382μs	total=  5,633,098μs.
+to_records                                      : median= 2,940μs	mean=   45,148μs	max=  337,008μs	min=  355μs	total=  3,386,170μs.
+index_dict_apply                                : median= 2,985μs	mean=   44,145μs	max=  327,958μs	min=  326μs	total=  3,310,942μs.
+index_dict_apply_ignored_args                   : median= 2,743μs	mean=   42,130μs	max=  311,290μs	min=  368μs	total=  3,159,812μs.
+index_dict_comprehension                        : median= 1,603μs	mean=   23,970μs	max=  178,706μs	min=  275μs	total=  1,797,796μs.
+index_dict_comprehension_ignored_args           : median= 1,545μs	mean=   22,540μs	max=  168,237μs	min=  261μs	total=  1,690,511μs.
+to_numpy_take                                   : median= 1,660μs	mean=   22,275μs	max=  165,787μs	min=  117μs	total=  1,670,655μs.
+itertuples                                      : median= 1,360μs	mean=   18,294μs	max=  134,577μs	min=  329μs	total=  1,372,099μs.
+itertuples_comprehension                        : median= 1,348μs	mean=   18,243μs	max=  134,478μs	min=  304μs	total=  1,368,279μs.
+itertuples2                                     : median= 1,356μs	mean=   17,814μs	max=  131,766μs	min=  312μs	total=  1,336,107μs.
+itertuples_ignored_args                         : median= 1,271μs	mean=   16,388μs	max=  120,829μs	min=  295μs	total=  1,229,105μs.
+itertuples_direct_access                        : median= 1,035μs	mean=   13,253μs	max=   97,167μs	min=  305μs	total=    994,046μs.
+itertuples_direct_access_comprehension          : median= 1,034μs	mean=   13,139μs	max=   96,858μs	min=  304μs	total=    985,468μs.
+to_numpy_direct_access                          : median=   720μs	mean=   12,134μs	max=   91,476μs	min=   78μs	total=    910,103μs.
+zip_comprehension_lookup                        : median= 1,101μs	mean=   12,040μs	max=   87,779μs	min=  133μs	total=    903,013μs.
+zip_comprehension_direct_access                 : median=   800μs	mean=   11,819μs	max=   87,253μs	min=  127μs	total=    886,462μs.
+zip_comprehension_np_values_lookup              : median=   771μs	mean=   10,692μs	max=   79,362μs	min=  135μs	total=    801,915μs.
+
+Finished `time_low_iteration_count` timing test.

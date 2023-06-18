@@ -1,0 +1,255 @@
+Starting `time_high_iteration_count` timing test.
+Time small to medium DataFrames, high iteration count. Do 8,192 iterations (SEED=1) on DataFrame of sizes: [2, 4, 8, 16, 32, 64].
+
+'index_series_iterrows':
+size=2    :       572μs mean time over 8,192 iterations, mean time per row: 286μs, total time taken:   4,693,555μs.
+size=4    :     1,084μs mean time over 8,192 iterations, mean time per row: 271μs, total time taken:   8,883,748μs.
+size=8    :     2,049μs mean time over 8,192 iterations, mean time per row: 256μs, total time taken:  16,786,925μs.
+size=16   :     3,998μs mean time over 8,192 iterations, mean time per row: 249μs, total time taken:  32,757,908μs.
+size=32   :     7,970μs mean time over 8,192 iterations, mean time per row: 249μs, total time taken:  65,294,353μs.
+size=64   :    15,837μs mean time over 8,192 iterations, mean time per row: 247μs, total time taken: 129,739,559μs.
+Total time taken for 'index_series_iterrows': 258,156,051μs.
+
+'index_series_iterrows_comprehension':
+size=2    :       593μs mean time over 8,192 iterations, mean time per row: 296μs, total time taken:   4,864,940μs.
+size=4    :     1,090μs mean time over 8,192 iterations, mean time per row: 272μs, total time taken:   8,931,773μs.
+size=8    :     2,084μs mean time over 8,192 iterations, mean time per row: 260μs, total time taken:  17,077,648μs.
+size=16   :     3,952μs mean time over 8,192 iterations, mean time per row: 247μs, total time taken:  32,377,609μs.
+size=32   :     7,962μs mean time over 8,192 iterations, mean time per row: 248μs, total time taken:  65,232,420μs.
+size=64   :    15,688μs mean time over 8,192 iterations, mean time per row: 245μs, total time taken: 128,518,576μs.
+Total time taken for 'index_series_iterrows_comprehension': 257,002,970μs.
+
+'index_df_apply_kwargs':
+size=2    :       769μs mean time over 8,192 iterations, mean time per row: 384μs, total time taken:   6,306,456μs.
+size=4    :     1,247μs mean time over 8,192 iterations, mean time per row: 311μs, total time taken:  10,220,308μs.
+size=8    :     2,277μs mean time over 8,192 iterations, mean time per row: 284μs, total time taken:  18,655,065μs.
+size=16   :     4,157μs mean time over 8,192 iterations, mean time per row: 259μs, total time taken:  34,058,678μs.
+size=32   :     7,924μs mean time over 8,192 iterations, mean time per row: 247μs, total time taken:  64,920,150μs.
+size=64   :    15,392μs mean time over 8,192 iterations, mean time per row: 240μs, total time taken: 126,092,285μs.
+Total time taken for 'index_df_apply_kwargs': 260,252,943μs.
+
+'index_df_apply':
+size=2    :       766μs mean time over 8,192 iterations, mean time per row: 383μs, total time taken:   6,282,284μs.
+size=4    :     1,235μs mean time over 8,192 iterations, mean time per row: 308μs, total time taken:  10,118,971μs.
+size=8    :     2,117μs mean time over 8,192 iterations, mean time per row: 264μs, total time taken:  17,347,657μs.
+size=16   :     3,819μs mean time over 8,192 iterations, mean time per row: 238μs, total time taken:  31,287,953μs.
+size=32   :     7,334μs mean time over 8,192 iterations, mean time per row: 229μs, total time taken:  60,085,044μs.
+size=64   :    13,642μs mean time over 8,192 iterations, mean time per row: 213μs, total time taken: 111,762,699μs.
+Total time taken for 'index_df_apply': 236,884,611μs.
+
+'index_series_iterrows_comprehension_ignored_args':
+size=2    :       139μs mean time over 8,192 iterations, mean time per row:  69μs, total time taken:   1,141,414μs.
+size=4    :       225μs mean time over 8,192 iterations, mean time per row:  56μs, total time taken:   1,846,938μs.
+size=8    :       383μs mean time over 8,192 iterations, mean time per row:  47μs, total time taken:   3,141,739μs.
+size=16   :       678μs mean time over 8,192 iterations, mean time per row:  42μs, total time taken:   5,559,547μs.
+size=32   :     1,328μs mean time over 8,192 iterations, mean time per row:  41μs, total time taken:  10,884,697μs.
+size=64   :     2,629μs mean time over 8,192 iterations, mean time per row:  41μs, total time taken:  21,544,137μs.
+Total time taken for 'index_series_iterrows_comprehension_ignored_args': 44,118,475μs.
+
+'index_dict_iterrows':
+size=2    :       127μs mean time over 8,192 iterations, mean time per row:  63μs, total time taken:   1,047,679μs.
+size=4    :       195μs mean time over 8,192 iterations, mean time per row:  48μs, total time taken:   1,604,552μs.
+size=8    :       338μs mean time over 8,192 iterations, mean time per row:  42μs, total time taken:   2,772,204μs.
+size=16   :       574μs mean time over 8,192 iterations, mean time per row:  35μs, total time taken:   4,705,611μs.
+size=32   :     1,121μs mean time over 8,192 iterations, mean time per row:  35μs, total time taken:   9,188,622μs.
+size=64   :     2,216μs mean time over 8,192 iterations, mean time per row:  34μs, total time taken:  18,154,654μs.
+Total time taken for 'index_dict_iterrows': 37,473,327μs.
+
+'index_dict_iterrows_comprehension':
+size=2    :       127μs mean time over 8,192 iterations, mean time per row:  63μs, total time taken:   1,041,772μs.
+size=4    :       198μs mean time over 8,192 iterations, mean time per row:  49μs, total time taken:   1,622,557μs.
+size=8    :       324μs mean time over 8,192 iterations, mean time per row:  40μs, total time taken:   2,660,311μs.
+size=16   :       558μs mean time over 8,192 iterations, mean time per row:  34μs, total time taken:   4,574,226μs.
+size=32   :     1,116μs mean time over 8,192 iterations, mean time per row:  34μs, total time taken:   9,150,238μs.
+size=64   :     2,216μs mean time over 8,192 iterations, mean time per row:  34μs, total time taken:  18,161,092μs.
+Total time taken for 'index_dict_iterrows_comprehension': 37,210,198μs.
+
+'index_dict_iterrows_comprehension_ignored_args':
+size=2    :       125μs mean time over 8,192 iterations, mean time per row:  62μs, total time taken:   1,027,201μs.
+size=4    :       190μs mean time over 8,192 iterations, mean time per row:  47μs, total time taken:   1,560,375μs.
+size=8    :       320μs mean time over 8,192 iterations, mean time per row:  40μs, total time taken:   2,623,578μs.
+size=16   :       558μs mean time over 8,192 iterations, mean time per row:  34μs, total time taken:   4,574,511μs.
+size=32   :     1,097μs mean time over 8,192 iterations, mean time per row:  34μs, total time taken:   8,992,044μs.
+size=64   :     2,156μs mean time over 8,192 iterations, mean time per row:  33μs, total time taken:  17,663,228μs.
+Total time taken for 'index_dict_iterrows_comprehension_ignored_args': 36,440,940μs.
+
+'index_df_apply_kwargs_ignored_args':
+size=2    :       296μs mean time over 8,192 iterations, mean time per row: 148μs, total time taken:   2,430,701μs.
+size=4    :       332μs mean time over 8,192 iterations, mean time per row:  83μs, total time taken:   2,726,293μs.
+size=8    :       390μs mean time over 8,192 iterations, mean time per row:  48μs, total time taken:   3,197,437μs.
+size=16   :       447μs mean time over 8,192 iterations, mean time per row:  27μs, total time taken:   3,665,563μs.
+size=32   :       703μs mean time over 8,192 iterations, mean time per row:  21μs, total time taken:   5,761,553μs.
+size=64   :     1,220μs mean time over 8,192 iterations, mean time per row:  19μs, total time taken:   9,998,529μs.
+Total time taken for 'index_df_apply_kwargs_ignored_args': 27,780,079μs.
+
+'to_records':
+size=2    :       285μs mean time over 8,192 iterations, mean time per row: 142μs, total time taken:   2,339,561μs.
+size=4    :       310μs mean time over 8,192 iterations, mean time per row:  77μs, total time taken:   2,543,135μs.
+size=8    :       345μs mean time over 8,192 iterations, mean time per row:  43μs, total time taken:   2,827,573μs.
+size=16   :       420μs mean time over 8,192 iterations, mean time per row:  26μs, total time taken:   3,443,963μs.
+size=32   :       570μs mean time over 8,192 iterations, mean time per row:  17μs, total time taken:   4,673,355μs.
+size=64   :       851μs mean time over 8,192 iterations, mean time per row:  13μs, total time taken:   6,973,216μs.
+Total time taken for 'to_records': 22,800,806μs.
+
+'index_dict_apply':
+size=2    :       280μs mean time over 8,192 iterations, mean time per row: 140μs, total time taken:   2,299,895μs.
+size=4    :       304μs mean time over 8,192 iterations, mean time per row:  76μs, total time taken:   2,494,348μs.
+size=8    :       342μs mean time over 8,192 iterations, mean time per row:  42μs, total time taken:   2,806,054μs.
+size=16   :       361μs mean time over 8,192 iterations, mean time per row:  22μs, total time taken:   2,961,711μs.
+size=32   :       519μs mean time over 8,192 iterations, mean time per row:  16μs, total time taken:   4,256,252μs.
+size=64   :       852μs mean time over 8,192 iterations, mean time per row:  13μs, total time taken:   6,985,671μs.
+Total time taken for 'index_dict_apply': 21,803,934μs.
+
+'index_dict_apply_ignored_args':
+size=2    :       279μs mean time over 8,192 iterations, mean time per row: 139μs, total time taken:   2,292,483μs.
+size=4    :       302μs mean time over 8,192 iterations, mean time per row:  75μs, total time taken:   2,480,381μs.
+size=8    :       337μs mean time over 8,192 iterations, mean time per row:  42μs, total time taken:   2,766,233μs.
+size=16   :       355μs mean time over 8,192 iterations, mean time per row:  22μs, total time taken:   2,913,040μs.
+size=32   :       502μs mean time over 8,192 iterations, mean time per row:  15μs, total time taken:   4,120,558μs.
+size=64   :       806μs mean time over 8,192 iterations, mean time per row:  12μs, total time taken:   6,608,154μs.
+Total time taken for 'index_dict_apply_ignored_args': 21,180,851μs.
+
+'index_dict_comprehension':
+size=2    :       214μs mean time over 8,192 iterations, mean time per row: 107μs, total time taken:   1,758,662μs.
+size=4    :       225μs mean time over 8,192 iterations, mean time per row:  56μs, total time taken:   1,849,271μs.
+size=8    :       248μs mean time over 8,192 iterations, mean time per row:  31μs, total time taken:   2,035,924μs.
+size=16   :       287μs mean time over 8,192 iterations, mean time per row:  17μs, total time taken:   2,355,536μs.
+size=32   :       365μs mean time over 8,192 iterations, mean time per row:  11μs, total time taken:   2,994,472μs.
+size=64   :       527μs mean time over 8,192 iterations, mean time per row:   8μs, total time taken:   4,322,043μs.
+Total time taken for 'index_dict_comprehension': 15,315,910μs.
+
+'index_dict_comprehension_ignored_args':
+size=2    :       217μs mean time over 8,192 iterations, mean time per row: 108μs, total time taken:   1,779,227μs.
+size=4    :       224μs mean time over 8,192 iterations, mean time per row:  56μs, total time taken:   1,837,230μs.
+size=8    :       242μs mean time over 8,192 iterations, mean time per row:  30μs, total time taken:   1,984,505μs.
+size=16   :       281μs mean time over 8,192 iterations, mean time per row:  17μs, total time taken:   2,307,683μs.
+size=32   :       359μs mean time over 8,192 iterations, mean time per row:  11μs, total time taken:   2,947,016μs.
+size=64   :       510μs mean time over 8,192 iterations, mean time per row:   7μs, total time taken:   4,183,672μs.
+Total time taken for 'index_dict_comprehension_ignored_args': 15,039,335μs.
+
+'to_numpy_take':
+size=2    :        61μs mean time over 8,192 iterations, mean time per row:  30μs, total time taken:     505,983μs.
+size=4    :        72μs mean time over 8,192 iterations, mean time per row:  18μs, total time taken:     591,488μs.
+size=8    :        88μs mean time over 8,192 iterations, mean time per row:  11μs, total time taken:     725,706μs.
+size=16   :        93μs mean time over 8,192 iterations, mean time per row:   5μs, total time taken:     765,464μs.
+size=32   :       170μs mean time over 8,192 iterations, mean time per row:   5μs, total time taken:   1,395,122μs.
+size=64   :       316μs mean time over 8,192 iterations, mean time per row:   4μs, total time taken:   2,588,844μs.
+Total time taken for 'to_numpy_take': 6,572,609μs.
+
+'itertuples':
+size=2    :       267μs mean time over 8,192 iterations, mean time per row: 133μs, total time taken:   2,189,229μs.
+size=4    :       280μs mean time over 8,192 iterations, mean time per row:  70μs, total time taken:   2,301,005μs.
+size=8    :       291μs mean time over 8,192 iterations, mean time per row:  36μs, total time taken:   2,390,597μs.
+size=16   :       326μs mean time over 8,192 iterations, mean time per row:  20μs, total time taken:   2,671,190μs.
+size=32   :       385μs mean time over 8,192 iterations, mean time per row:  12μs, total time taken:   3,155,838μs.
+size=64   :       511μs mean time over 8,192 iterations, mean time per row:   7μs, total time taken:   4,191,140μs.
+Total time taken for 'itertuples': 16,899,002μs.
+
+'itertuples_comprehension':
+size=2    :       272μs mean time over 8,192 iterations, mean time per row: 136μs, total time taken:   2,231,255μs.
+size=4    :       284μs mean time over 8,192 iterations, mean time per row:  71μs, total time taken:   2,327,826μs.
+size=8    :       296μs mean time over 8,192 iterations, mean time per row:  37μs, total time taken:   2,426,217μs.
+size=16   :       331μs mean time over 8,192 iterations, mean time per row:  20μs, total time taken:   2,718,583μs.
+size=32   :       387μs mean time over 8,192 iterations, mean time per row:  12μs, total time taken:   3,175,402μs.
+size=64   :       519μs mean time over 8,192 iterations, mean time per row:   8μs, total time taken:   4,255,902μs.
+Total time taken for 'itertuples_comprehension': 17,135,187μs.
+
+'itertuples2':
+size=2    :       275μs mean time over 8,192 iterations, mean time per row: 137μs, total time taken:   2,253,208μs.
+size=4    :       282μs mean time over 8,192 iterations, mean time per row:  70μs, total time taken:   2,311,481μs.
+size=8    :       293μs mean time over 8,192 iterations, mean time per row:  36μs, total time taken:   2,405,907μs.
+size=16   :       329μs mean time over 8,192 iterations, mean time per row:  20μs, total time taken:   2,701,454μs.
+size=32   :       387μs mean time over 8,192 iterations, mean time per row:  12μs, total time taken:   3,177,823μs.
+size=64   :       515μs mean time over 8,192 iterations, mean time per row:   8μs, total time taken:   4,220,918μs.
+Total time taken for 'itertuples2': 17,070,794μs.
+
+'itertuples_ignored_args':
+size=2    :       282μs mean time over 8,192 iterations, mean time per row: 141μs, total time taken:   2,311,885μs.
+size=4    :       277μs mean time over 8,192 iterations, mean time per row:  69μs, total time taken:   2,274,810μs.
+size=8    :       291μs mean time over 8,192 iterations, mean time per row:  36μs, total time taken:   2,385,330μs.
+size=16   :       321μs mean time over 8,192 iterations, mean time per row:  20μs, total time taken:   2,632,715μs.
+size=32   :       375μs mean time over 8,192 iterations, mean time per row:  11μs, total time taken:   3,073,025μs.
+size=64   :       485μs mean time over 8,192 iterations, mean time per row:   7μs, total time taken:   3,975,601μs.
+Total time taken for 'itertuples_ignored_args': 16,653,369μs.
+
+'itertuples_direct_access':
+size=2    :       269μs mean time over 8,192 iterations, mean time per row: 134μs, total time taken:   2,206,375μs.
+size=4    :       274μs mean time over 8,192 iterations, mean time per row:  68μs, total time taken:   2,245,038μs.
+size=8    :       284μs mean time over 8,192 iterations, mean time per row:  35μs, total time taken:   2,333,073μs.
+size=16   :       306μs mean time over 8,192 iterations, mean time per row:  19μs, total time taken:   2,513,190μs.
+size=32   :       351μs mean time over 8,192 iterations, mean time per row:  10μs, total time taken:   2,876,146μs.
+size=64   :       447μs mean time over 8,192 iterations, mean time per row:   6μs, total time taken:   3,661,988μs.
+Total time taken for 'itertuples_direct_access': 15,835,812μs.
+
+'itertuples_direct_access_comprehension':
+size=2    :       280μs mean time over 8,192 iterations, mean time per row: 140μs, total time taken:   2,295,070μs.
+size=4    :       281μs mean time over 8,192 iterations, mean time per row:  70μs, total time taken:   2,309,621μs.
+size=8    :       285μs mean time over 8,192 iterations, mean time per row:  35μs, total time taken:   2,338,495μs.
+size=16   :       310μs mean time over 8,192 iterations, mean time per row:  19μs, total time taken:   2,547,003μs.
+size=32   :       358μs mean time over 8,192 iterations, mean time per row:  11μs, total time taken:   2,935,690μs.
+size=64   :       442μs mean time over 8,192 iterations, mean time per row:   6μs, total time taken:   3,626,242μs.
+Total time taken for 'itertuples_direct_access_comprehension': 16,052,124μs.
+
+'to_numpy_direct_access':
+size=2    :        56μs mean time over 8,192 iterations, mean time per row:  28μs, total time taken:     461,623μs.
+size=4    :        62μs mean time over 8,192 iterations, mean time per row:  15μs, total time taken:     508,196μs.
+size=8    :        69μs mean time over 8,192 iterations, mean time per row:   8μs, total time taken:     566,286μs.
+size=16   :        61μs mean time over 8,192 iterations, mean time per row:   3μs, total time taken:     507,382μs.
+size=32   :       101μs mean time over 8,192 iterations, mean time per row:   3μs, total time taken:     831,880μs.
+size=64   :       186μs mean time over 8,192 iterations, mean time per row:   2μs, total time taken:   1,524,449μs.
+Total time taken for 'to_numpy_direct_access': 4,399,819μs.
+
+'zip_comprehension_direct_access':
+size=2    :        28μs mean time over 8,192 iterations, mean time per row:  14μs, total time taken:     231,858μs.
+size=4    :        32μs mean time over 8,192 iterations, mean time per row:   8μs, total time taken:     269,540μs.
+size=8    :        44μs mean time over 8,192 iterations, mean time per row:   5μs, total time taken:     362,601μs.
+size=16   :        62μs mean time over 8,192 iterations, mean time per row:   3μs, total time taken:     511,519μs.
+size=32   :       100μs mean time over 8,192 iterations, mean time per row:   3μs, total time taken:     827,289μs.
+size=64   :       177μs mean time over 8,192 iterations, mean time per row:   2μs, total time taken:   1,457,651μs.
+Total time taken for 'zip_comprehension_direct_access': 3,660,460μs.
+
+'zip_comprehension_lookup':
+size=2    :        29μs mean time over 8,192 iterations, mean time per row:  14μs, total time taken:     238,826μs.
+size=4    :        34μs mean time over 8,192 iterations, mean time per row:   8μs, total time taken:     280,660μs.
+size=8    :        44μs mean time over 8,192 iterations, mean time per row:   5μs, total time taken:     367,815μs.
+size=16   :        63μs mean time over 8,192 iterations, mean time per row:   3μs, total time taken:     520,147μs.
+size=32   :       101μs mean time over 8,192 iterations, mean time per row:   3μs, total time taken:     830,615μs.
+size=64   :       175μs mean time over 8,192 iterations, mean time per row:   2μs, total time taken:   1,438,751μs.
+Total time taken for 'zip_comprehension_lookup': 3,676,817μs.
+
+'zip_comprehension_np_values_lookup':
+size=2    :        28μs mean time over 8,192 iterations, mean time per row:  14μs, total time taken:     231,166μs.
+size=4    :        33μs mean time over 8,192 iterations, mean time per row:   8μs, total time taken:     272,568μs.
+size=8    :        41μs mean time over 8,192 iterations, mean time per row:   5μs, total time taken:     343,320μs.
+size=16   :        60μs mean time over 8,192 iterations, mean time per row:   3μs, total time taken:     492,626μs.
+size=32   :       101μs mean time over 8,192 iterations, mean time per row:   3μs, total time taken:     831,142μs.
+size=64   :       170μs mean time over 8,192 iterations, mean time per row:   2μs, total time taken:   1,394,483μs.
+Total time taken for 'zip_comprehension_np_values_lookup': 3,565,306μs.
+
+index_df_apply_kwargs                           : median= 3,217μs	mean=    5,294μs	max=   15,392μs	min=  769μs	total=260,252,943μs.
+index_series_iterrows                           : median= 3,023μs	mean=    5,252μs	max=   15,837μs	min=  572μs	total=258,156,051μs.
+index_series_iterrows_comprehension             : median= 3,018μs	mean=    5,228μs	max=   15,688μs	min=  593μs	total=257,002,970μs.
+index_df_apply                                  : median= 2,968μs	mean=    4,819μs	max=   13,642μs	min=  766μs	total=236,884,611μs.
+index_series_iterrows_comprehension_ignored_args: median=   531μs	mean=      897μs	max=    2,629μs	min=  139μs	total= 44,118,475μs.
+index_dict_iterrows                             : median=   456μs	mean=      762μs	max=    2,216μs	min=  127μs	total= 37,473,327μs.
+index_dict_iterrows_comprehension               : median=   441μs	mean=      757μs	max=    2,216μs	min=  127μs	total= 37,210,198μs.
+index_dict_iterrows_comprehension_ignored_args  : median=   439μs	mean=      741μs	max=    2,156μs	min=  125μs	total= 36,440,940μs.
+index_df_apply_kwargs_ignored_args              : median=   418μs	mean=      565μs	max=    1,220μs	min=  296μs	total= 27,780,079μs.
+to_records                                      : median=   382μs	mean=      463μs	max=      851μs	min=  285μs	total= 22,800,806μs.
+index_dict_apply                                : median=   352μs	mean=      443μs	max=      852μs	min=  280μs	total= 21,803,934μs.
+index_dict_apply_ignored_args                   : median=   346μs	mean=      430μs	max=      806μs	min=  279μs	total= 21,180,851μs.
+itertuples_comprehension                        : median=   314μs	mean=      348μs	max=      519μs	min=  272μs	total= 17,135,187μs.
+itertuples2                                     : median=   311μs	mean=      347μs	max=      515μs	min=  275μs	total= 17,070,794μs.
+itertuples                                      : median=   308μs	mean=      343μs	max=      511μs	min=  267μs	total= 16,899,002μs.
+itertuples_ignored_args                         : median=   306μs	mean=      338μs	max=      485μs	min=  277μs	total= 16,653,369μs.
+itertuples_direct_access_comprehension          : median=   298μs	mean=      326μs	max=      442μs	min=  280μs	total= 16,052,124μs.
+itertuples_direct_access                        : median=   295μs	mean=      322μs	max=      447μs	min=  269μs	total= 15,835,812μs.
+index_dict_comprehension                        : median=   268μs	mean=      311μs	max=      527μs	min=  214μs	total= 15,315,910μs.
+index_dict_comprehension_ignored_args           : median=   261μs	mean=      305μs	max=      510μs	min=  217μs	total= 15,039,335μs.
+to_numpy_take                                   : median=    91μs	mean=      133μs	max=      316μs	min=   61μs	total=  6,572,609μs.
+to_numpy_direct_access                          : median=    65μs	mean=       89μs	max=      186μs	min=   56μs	total=  4,399,819μs.
+zip_comprehension_lookup                        : median=    54μs	mean=       74μs	max=      175μs	min=   29μs	total=  3,676,817μs.
+zip_comprehension_direct_access                 : median=    53μs	mean=       74μs	max=      177μs	min=   28μs	total=  3,660,460μs.
+zip_comprehension_np_values_lookup              : median=    51μs	mean=       72μs	max=      170μs	min=   28μs	total=  3,565,306μs.
+
+Finished `time_high_iteration_count` timing test.
